@@ -96,9 +96,9 @@ class MY_GUI:
     def get_sys_info(self):
         # 连接数据库
         connection = pymysql.connect(host='localhost',
-                                     user='root',
-                                     password='root',
-                                     db='aisys',
+                                     user='user',
+                                     password='pwd',
+                                     db='dbname',
                                      charset='utf8')
         # 获取连接下的游标
         cursor_test = connection.cursor()
